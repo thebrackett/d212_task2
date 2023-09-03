@@ -1,5 +1,4 @@
 Variable Name,Standardized Name,Data Type (Quantitative/Qualitative),Sub Type,Description,Example
-Unnamed: 0,original_order,Qualitative,Ordinal,"Unlabeled column, which appears to be the index column generated when using the .to_csv() function of a pandas dataframe with the index parameter set to False.",1
 CaseOrder,case_order,Qualitative,Ordinal,Number representing the initial sequence of rows/records,34
 Customer_id,customer_id,Qualitative,Nominal,Alphanumeric string unique to each person treated,C123456
 Interaction,interaction,Qualitative,Nominal,"128 bit Universally Unique ID (UUID or GUID) associated with specific instances of medical procedures, customer transactions, admissions",5225f56b-d1da-43a3-9720-24694af83145
@@ -12,7 +11,7 @@ Lat,lat,Quantitative,Continuous,Latitude portion of patient's GPS coordinates fr
 Lng,lng,Quantitative,Continuous,Longitudinal GPS coordinate of patient residence as listed on the billing statement,-81.05788
 Population,population,Quantitative,Discrete,Census reported population for a one mile radius of patient's zip code (may differ from patient's billing zip code),26149
 Area,area,Qualitative,Nominal,"Unofficial census data designation of patient's residence (urban, suburban, rural)",Urban
-Timezone,tiemzone,Qualitative,Nominal,Patient's residence time zone from sign-up information,America/Chicago
+TimeZone,tiemzone,Qualitative,Nominal,Patient's residence time zone from sign-up information,America/Chicago
 Job,job,Qualitative,Nominal,Patient/Primary Insurance holder from the information collected at admissions,Computer games developer
 Children,children,Quantitative,Discrete,Reported count of children in the household of the patient from admissions information,4
 Age,age,Quantitative,Continuous,Patient age from admissions information,55
@@ -25,7 +24,7 @@ ReAdmis,readmitted_in_30_days,Qualitative,Nominal,"Indicates if the patient read
 VitD_levels,vit_d_levels,Quantitative,Continuous,Vitamin D levels of patient in ng/mL,16.49239813
 Doc_visits,doc_visits,Quantitative,Discrete,Primary physician visits received by the patient during their initial hospitalization,7
 Full_meals_eaten,full_meals_eaten,Quantitative,Discrete,Full meals eaten by patient during hospitalization (partial meals are marked as 0). Note that more than three meals were provided to patients on request.,3
-VitD_supp,vit_d_supp,Quantitative,Discrete,Count of vitamin D supplements given to the patient,2
+vitD_supp,vit_d_supp,Quantitative,Discrete,Count of vitamin D supplements given to the patient,2
 Soft_drink,soft_drink,Qualitative,Nominal,"Indicate if patient usually drinks three or more sodas daily (yes, no)",Yes
 Initial_admin,initial_admin,Qualitative,Nominal,"Admittance method for initial admission of patient to hospital (emergency admission, elective admission, observation)",Emergency Admission
 HighBlood,high_blood,Qualitative,Nominal,"Indicates if the patient has high blood pressure (yes, no)",No
