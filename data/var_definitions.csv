@@ -1,0 +1,54 @@
+Variable Name,Standardized Name,Data Type (Quantitative/Qualitative),Sub Type,Description,Example
+Unnamed: 0,original_order,Qualitative,Ordinal,"Unlabeled column, which appears to be the index column generated when using the .to_csv() function of a pandas dataframe with the index parameter set to False.",1
+CaseOrder,case_order,Qualitative,Ordinal,Number representing the initial sequence of rows/records,34
+Customer_id,customer_id,Qualitative,Nominal,Alphanumeric string unique to each person treated,C123456
+Interaction,interaction,Qualitative,Nominal,"128 bit Universally Unique ID (UUID or GUID) associated with specific instances of medical procedures, customer transactions, admissions",5225f56b-d1da-43a3-9720-24694af83145
+UID,uid,Qualitative,Nominal,"128 bit Universally Unique ID (UUID or GUID) with hyphens removed. It is related to patient transactions, procedures, and admissions",3a83ddb66e2ae73798bdf1d705dc0932
+City,city,Qualitative,Nominal,City of patient's billing address,Chicago
+State,state,Qualitative,Nominal,State of patient's billing address,VA
+County,county,Qualitative,Nominal,County of patient's billing address,Travis
+Zip,zip,Qualitative,Nominal,Zip code of patient's billing address,12345
+Lat,lat,Quantitative,Continuous,Latitude portion of patient's GPS coordinates from billing statement,42.03038
+Lng,lng,Quantitative,Continuous,Longitudinal GPS coordinate of patient residence as listed on the billing statement,-81.05788
+Population,population,Quantitative,Discrete,Census reported population for a one mile radius of patient's zip code (may differ from patient's billing zip code),26149
+Area,area,Qualitative,Nominal,"Unofficial census data designation of patient's residence (urban, suburban, rural)",Urban
+Timezone,tiemzone,Qualitative,Nominal,Patient's residence time zone from sign-up information,America/Chicago
+Job,job,Qualitative,Nominal,Patient/Primary Insurance holder from the information collected at admissions,Computer games developer
+Children,children,Quantitative,Discrete,Reported count of children in the household of the patient from admissions information,4
+Age,age,Quantitative,Continuous,Patient age from admissions information,55
+Education,education,Qualitative,Nominal,Patient's level of education as from admissions information,Regular High School Diploma
+Employment,employment,Qualitative,Nominal,Patient's employment status from admissions information,Full Time
+Income,income,Quantitative,Continuous,Patient/Primary insurance holder's annual income from admission documents,55586.48
+Marital,martial,Qualitative,Nominal,Patient/primary insurance holder's marital status from admission information,Divorced
+Gender,gender,Qualitative,Nominal,"Patient orientation of male, female, or nonbinary",Female
+ReAdmis,readmitted_in_30_days,Qualitative,Nominal,"Indicates if the patient readmitted within 30 days of release (Yes, No)",No
+VitD_levels,vit_d_levels,Quantitative,Continuous,Vitamin D levels of patient in ng/mL,16.49239813
+Doc_visits,doc_visits,Quantitative,Discrete,Primary physician visits received by the patient during their initial hospitalization,7
+Full_meals_eaten,full_meals_eaten,Quantitative,Discrete,Full meals eaten by patient during hospitalization (partial meals are marked as 0). Note that more than three meals were provided to patients on request.,3
+VitD_supp,vit_d_supp,Quantitative,Discrete,Count of vitamin D supplements given to the patient,2
+Soft_drink,soft_drink,Qualitative,Nominal,"Indicate if patient usually drinks three or more sodas daily (yes, no)",Yes
+Initial_admin,initial_admin,Qualitative,Nominal,"Admittance method for initial admission of patient to hospital (emergency admission, elective admission, observation)",Emergency Admission
+HighBlood,high_blood,Qualitative,Nominal,"Indicates if the patient has high blood pressure (yes, no)",No
+Stroke,stroke,Qualitative,Nominal,"Indicates if the patient has had a stroke (yes, no)",No
+Complication_risk,complication_risk,Qualitative,Ordinal,"Patient complication risk level from primary patient assessment (high, medium, low)",Medium
+Overweight,overweight,Qualitative,Nominal,"Indicates if the patient is considered obese based on age, gender, and height (yes, no)",1
+Arthritis,arthritis,Qualitative,Nominal,"Indicates if the patient has arthritis (yes, no)",Yes
+Diabetes,diabetes,Qualitative,Nominal,"Indicates if the patient has diabetes (yes, no)",No
+Hyperlipidemia,hyperlipidemia,Qualitative,Nominal,"Indicates if the patient has hyperlipidemia (yes, no)",No
+BackPain,back_pain,Qualitative,Nominal,"Indicates if the patient has chronic back pain (yes, no)",Yes
+Anxiety,anxiety,Qualitative,Nominal,"Indicates if the patient has an anxiety disorder (yes, no)",0
+Allergic_rhinitis,allergic_rhinitis,Qualitative,Nominal,"Indicates if the patient has allergic rhinitis (yes, no)",Yes
+Reflux_esophagitis,reflux_esophagitis,Qualitative,Nominal,"Indicates if the patient has reflux esophagitis (yes, no)",No
+Asthma,asthma,Qualitative,Nominal,"Indicates if the patient has asthma (yes, no)",Yes
+Services,services,Qualitative,Nominal,"Patient's primary service received during hospital visit (blood work, intravenous, CT scan, MRI)",CT Scan
+Initial_days,initial_days,Quantitative,Continuous,Length of patient stay in the hospital (initial visit only),7.038431748
+TotalCharge,total_charge,Quantitative,Continuous,Average daily cost to patient per day. Does not include special treatments. (Formula: Total charge for visit/length of patient stay in days),14804.31933
+Additional_charges,additional_charges,Quantitative,Continuous,"Patient's average charge for procedures, treatments, medicines, anesthesiology, and other treatments not considered as part of the ""TotalCharge"" column.",18518.04317
+Item1,survey_timely_admission,Qualitative,Ordinal,"Timely admission, (1: most important, 8: least important)",1
+Item2,survey_timely_treatment,Qualitative,Ordinal,"Timely treatment, (1: most important, 8: least important)",2
+Item3,survey_timely_visits,Qualitative,Ordinal,"Timely visits, (1: most important, 8: least important)",3
+Item4,survey_reliability,Qualitative,Ordinal,"Reliability, (1: most important, 8: least important)",4
+Item5,survey_options,Qualitative,Ordinal,"Options, (1: most important, 8: least important)",5
+Item6,survey_hours_of_treatment,Qualitative,Ordinal,"Hours of treatment, (1: most important, 8: least important)",6
+Item7,survey_courteous_staff,Qualitative,Ordinal,"Courteous staff, (1: most important, 8: least important)",7
+Item8,survey_doctor_active_listens,Qualitative,Ordinal,"Evidence of active listening from doctor, (1: most important, 8: least important)",8
